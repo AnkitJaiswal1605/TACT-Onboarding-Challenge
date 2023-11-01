@@ -30,9 +30,9 @@ Welcome to the TACT Onboardng Challenge! This short challenge will empower you t
 10. Follow the following socials:
 
     **Telegram**
-    https://t.me/TONSocietyIndia
-    https://t.me/tondev_eng
-    https://t.me/Nujan_io
+    https://t.me/TONSocietyIndia <br>
+    https://t.me/tondev_eng <br>
+    https://t.me/Nujan_io <br>
 
     **Twitter**
     https://twitter.com/TON_SocietyIND
