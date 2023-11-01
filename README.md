@@ -46,4 +46,4 @@ Welcome to the TACT OnboardIng Challenge! This short challenge will empower you 
 ### Got any questions? ❓
 
 Feel free to ask here : <br>
-https://discord.com/channels/745636507263696928/1168558334874497115
+https://discord.gg/fEr3yFJJ9r
