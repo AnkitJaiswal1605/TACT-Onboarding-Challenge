@@ -19,10 +19,10 @@ Welcome to the TACT Onboardng Challenge! This short challenge will empower you t
 2. Create a Tonkeeper wallet referring the Lesson 1 in the tutorial series
 3. Fork this repository to your own github account
 4. Create a folder with the following name convention: <br>
-    YourFullName_Tact_Challenge (If the name is already taken, use a number eg: YourFullName1_Tact_Challenge)
+    _YourFullName_Tact_Challenge_ (If the name is already taken, use a number eg: _YourFullName1_Tact_Challenge_)
 5. Go inside the folder and create a Counter smart contract referring the Lesson 2 in the tutorial series
 6. Write tests for the smart contract referring the Lesson 3 in the tutorial series
-7. Deploy the contract referring the Lesson 4 in the tutorial series. (IMPORTANT: Mention the address of your deployed contract in a readme file within your folder)
+7. Deploy the contract referring the Lesson 4 in the tutorial series. (**IMPORTANT**: Mention the address of your deployed contract in a readme file within your folder)
 8. Raise a Pull Request to merge with this repository (Make sure you create everything in the folder you created, so that there are no conflicts)
 9. Deploy the same smart contract on Nujan Web IDE: <br>
    https://ide-beta.nujan.io/ <br>
