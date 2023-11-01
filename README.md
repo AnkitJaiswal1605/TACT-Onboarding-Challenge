@@ -4,8 +4,8 @@ Welcome to the TACT Onboardng Challenge! This short challenge will empower you t
 
 ### Required time for completing the challenge 🕐
 
-1 hour 
-
+**1 hour 
+**
 ### Rewards on successful completion of the challenge 🏆
 
 - First 50 successful PRs would get TON merch at hackCBS event
@@ -15,3 +15,26 @@ Welcome to the TACT Onboardng Challenge! This short challenge will empower you t
  
 # The Challenge
 
+1. Refer to this tutorial series on Tact : https://docs.google.com/document/d/1d_4sAVh0JUlVK8AxcGqtrmnPzmJs1Sg5sXB6dsUmx44/edit
+2. Create a Tonkeeper wallet referring the Lesson 1 in the tutorial series
+3. Fork this repository to your own github account
+4. Create a folder with the following name convention:
+    YourFullName_Tact_Challenge (If the name is already taken, use a number eg: YourFullName1_Tact_Challenge)
+5. Go inside the folder and create a Counter smart contract referring the Lesson 2 in the tutorial series
+6. Write tests for the smart contract referring the Lesson 3 in the tutorial series
+7. Deploy the contract referring the Lesson 4 in the tutorial series. (IMPORTANT: Mention the address of your deployed contract in a readme file within your folder)
+8. Raise a Pull Request to merge with this repository (Make sure you create everything in the folder you created, so that there are no conflicts)
+9. Deploy the same smart contract on Nujan Web IDE:
+   https://ide-beta.nujan.io/
+   Docs: https://docs.nujan.io/
+10. Follow the following socials:
+
+    **Telegram**
+    https://t.me/TONSocietyIndia
+    https://t.me/tondev_eng
+    https://t.me/Nujan_io
+
+    **Twitter**
+    https://twitter.com/TON_SocietyIND
+
+11. Finally, share the link of your PR request on this Telegram channel https://t.me/TONSocietyIndia
