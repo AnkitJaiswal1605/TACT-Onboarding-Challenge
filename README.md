@@ -13,12 +13,12 @@ Welcome to the TACT Onboardng Challenge! This short challenge will empower you t
     - Added to the talent group of TON on Telegram
     - An NFT from the Nujan team
  
-# The Challenge
+# The Challenge 🛠
 
 1. Refer to this tutorial series on Tact : <br> https://docs.google.com/document/d/1d_4sAVh0JUlVK8AxcGqtrmnPzmJs1Sg5sXB6dsUmx44/edit
 2. Create a Tonkeeper wallet referring the Lesson 1 in the tutorial series
 3. Fork this repository to your own github account
-4. Create a folder with the following name convention:
+4. Create a folder with the following name convention: <br>
     YourFullName_Tact_Challenge (If the name is already taken, use a number eg: YourFullName1_Tact_Challenge)
 5. Go inside the folder and create a Counter smart contract referring the Lesson 2 in the tutorial series
 6. Write tests for the smart contract referring the Lesson 3 in the tutorial series
@@ -38,3 +38,8 @@ Welcome to the TACT Onboardng Challenge! This short challenge will empower you t
     https://twitter.com/TON_SocietyIND
 
 11. Finally, share the link of your PR request on this Telegram channel https://t.me/TONSocietyIndia
+
+### Got any questions? ❓
+
+Feel free to ask here : <br>
+https://discord.com/channels/745636507263696928/1168558334874497115
