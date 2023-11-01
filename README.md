@@ -6,6 +6,10 @@ Welcome to the TACT OnboardIng Challenge! This short challenge will empower you 
 
 **1 hour** 
 
+### Deadline ⏳
+
+3rd November (Friday), EOD
+
 ### Rewards on successful completion of the challenge 🏆
 
 - First 50 successful PRs would get TON merch at hackCBS event
