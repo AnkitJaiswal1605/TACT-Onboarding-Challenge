@@ -4,8 +4,8 @@ Welcome to the TACT Onboardng Challenge! This short challenge will empower you t
 
 ### Required time for completing the challenge 🕐
 
-**1 hour 
-**
+**1 hour** 
+
 ### Rewards on successful completion of the challenge 🏆
 
 - First 50 successful PRs would get TON merch at hackCBS event
