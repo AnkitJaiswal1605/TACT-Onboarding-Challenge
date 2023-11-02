@@ -1,5 +1,5 @@
 {
-    "name": "cp",
+    "name": "YashMittal_Tact_Challenge",
     "version": "0.0.1",
     "scripts": {
         "start": "blueprint run",

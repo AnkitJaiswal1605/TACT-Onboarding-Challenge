@@ -1,6 +1,6 @@
 import "@stdlib/deploy";
 
-contract CounterContract with Deployable {
+contract FirstContract with Deployable {
     id: Int as uint32;
     val: Int as uint32;
 
@@ -9,7 +9,7 @@ contract CounterContract with Deployable {
         self.val = 0;
     }
 
-    receive("increment") {
+    receive("increment"){
         self.val = self.val + 1;
     }
 
