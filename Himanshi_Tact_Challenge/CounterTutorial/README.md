@@ -1,5 +1,7 @@
 # CounterTutorial
+Contract Depplyed at address: `EQCsjPdU3EHBACK9b100hrDgirSkJbN1d4ZU_mF54tPeWe8K`
 
+You can checkout here: [https://testnet.tonscan.org/address/EQCsjPdU3EHBACK9b100hrDgirSkJbN1d4ZU_mF54tPeWe8K](https://testnet.tonscan.org/address/EQCsjPdU3EHBACK9b100hrDgirSkJbN1d4ZU_mF54tPeWe8K)
 ## Project structure
 
 -   `contracts` - source code of all the smart contracts of the project and their dependencies.
