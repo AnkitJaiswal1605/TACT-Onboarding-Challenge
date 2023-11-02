@@ -1,4 +1,4 @@
-# cp
+# CounterTutorial
 
 ## Project structure
 
@@ -24,3 +24,9 @@
 ### Add a new contract
 
 `npx blueprint create ContractName` or `yarn blueprint create ContractName`
+
+### Counter Address
+EQAlKWkaYbpRdRT8BoeOlGvLlLbPbq6EZQJND7cAt6KfwKXw
+
+### Test Addresss
+https://testnet.tonscan.org/address/EQAlKWkaYbpRdRT8BoeOlGvLlLbPbq6EZQJND7cAt6KfwKXw#transactions

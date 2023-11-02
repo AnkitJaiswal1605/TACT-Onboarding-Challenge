@@ -1,4 +1,4 @@
-# cp
+# CounterTutorial
 
 ## Project structure
 
