@@ -1,6 +1,6 @@
 # _YashKumarSingh_Tact_Challenge_
 
-- `deployed contract address` - EQBjYTzTpyTyRuUyfkZhpdO2FO8wK-EpWH5VY4o5qQUe3Kfq
+-   `deployed contract address` - EQBjYTzTpyTyRuUyfkZhpdO2FO8wK-EpWH5VY4o5qQUe3Kfq / EQBZqqnVjkvR1eiEuwVn5-v5Lm-o-FbPHvDtUAVKSgww0O_p
 
 ## Project structure
 
