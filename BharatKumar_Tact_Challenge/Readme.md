@@ -1,3 +1,3 @@
-Deployed Contract address = EQC4m-Qqmr2pV6_-HelhRCnJTfsQDlM2BG1DLmRYahyAEq4U
+Contract deployed at address EQBZqqnVjkvR1eiEuwVn5-v5Lm-o-FbPHvDtUAVKSgww0O_p
 
-Can be checked at https://testnet.tonscan.org/address/EQC4m-Qqmr2pV6_-HelhRCnJTfsQDlM2BG1DLmRYahyAEq4U
+You can view it at https://testnet.tonscan.org/address/EQBZqqnVjkvR1eiEuwVn5-v5Lm-o-FbPHvDtUAVKSgww0O_p
