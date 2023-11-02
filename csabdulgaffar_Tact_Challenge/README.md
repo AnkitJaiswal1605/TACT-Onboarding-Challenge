@@ -1,7 +1,6 @@
-# CounterTutorial
-
-Address: UQCn_NvM_pYnFjIQiz7lqSysRXpTkeu4Ye4JAy9vR4nUUMZJ
-Contract deployed at address UQCn_NvM_pYnFjIQiz7lqSysRXpTkeu4Ye4JAy9vR4nUUMZJ
+# Address: 
+UQCn_NvM_pYnFjIQiz7lqSysRXpTkeu4Ye4JAy9vR4nUUMZJ
+-Contract deployed at address UQCn_NvM_pYnFjIQiz7lqSysRXpTkeu4Ye4JAy9vR4nUUMZJ
 You can view it at https://testnet.tonscan.org/address/UQCn_NvM_pYnFjIQiz7lqSysRXpTkeu4Ye4JAy9vR4nUUMZJ
 ## Project structure
 
