@@ -1,4 +1,6 @@
-# Welcome to the TACT OnboardIng Challenge! This short challenge will empower you to create, test, deploy and interact with the smart contracts on the TON blockchain using the Tact programming language.
+# TACT Onboarding Challenge 🚀
+
+Welcome to the TACT OnboardIng Challenge! This short challenge will empower you to create, test, deploy and interact with the smart contracts on the TON blockchain using the Tact programming language.
 
 ### Required time for completing the challenge 🕐
 **1 hour**
@@ -11,7 +13,8 @@
 - Everyone successfully raising a PR would get:
     - Added to the talent group of TON on Telegram
     - An NFT from the Nujan team
-The Challenge 🛠
+
+# The Challenge 🛠
 Refer to this tutorial series on Tact :
 https://docs.google.com/document/d/1d_4sAVh0JUlVK8AxcGqtrmnPzmJs1Sg5sXB6dsUmx44/edit
 
