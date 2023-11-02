@@ -24,7 +24,7 @@ https://docs.google.com/document/d/1d_4sAVh0JUlVK8AxcGqtrmnPzmJs1Sg5sXB6dsUmx44/
 3. Fork this repository to your own github account
 
 4. Create a folder with the following name convention:
-YourFullName_Tact_Challenge (If the name is already taken, use a number eg: YourFullName1_Tact_Challenge)
+_YourFullName_Tact_Challenge_ (If the name is already taken, use a number eg: _YourFullName1_Tact_Challenge_)
 
 5. Go inside the folder and create a Counter smart contract referring the Lesson 2 in the tutorial series
 
@@ -34,18 +34,18 @@ YourFullName_Tact_Challenge (If the name is already taken, use a number eg: Your
 
 8. Raise a Pull Request to merge with this repository (Make sure you create everything in the folder you created, so that there are no conflicts)
 
-9 .Deploy the same smart contract on Nujan Web IDE as well:
-https://ide-beta.nujan.io/
-Docs: https://docs.nujan.io/
+9. Deploy the same smart contract on Nujan Web IDE as well: <br>
+https://ide-beta.nujan.io/ <br>
+Docs: https://docs.nujan.io/ 
 
 10. Follow the following socials:
 
-Telegram
-https://t.me/TONSocietyIndia
-https://t.me/tondev_eng
+**Telegram** <br>
+https://t.me/TONSocietyIndia <br>
+https://t.me/tondev_eng <br>
 https://t.me/Nujan_io
 
-Twitter
+**Twitter** <br>
 https://twitter.com/TON_SocietyIND
 
 11. Finally, share the link of your PR request on this Telegram channel https://t.me/TONSocietyIndia
