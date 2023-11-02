@@ -1,0 +1,4 @@
+https://testnet.tonscan.org/address/EQBZ_42zI8Bs8Ie_VqGN5HfTL1nwsRArz5UxikB5lk2cBZel
+
+Address
+EQBZ_42zI8Bs8Ie_VqGN5HfTL1nwsRArz5UxikB5lk2cBZel
