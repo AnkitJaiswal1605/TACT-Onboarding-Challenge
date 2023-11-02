@@ -1,20 +1,21 @@
-import { Blockchain, SandboxContract } from '@ton-community/sandbox';
+import { Blockchain, SandboxContract, TreasuryContract } from '@ton-community/sandbox';
 import { toNano } from 'ton-core';
 import { Counter } from '../wrappers/Counter';
 import '@ton-community/test-utils';
 
-describe('Counter', () => {
+describe('CounterContract', () => {
     let blockchain: Blockchain;
-    let counter: SandboxContract<Counter>;
+    let counterContract: SandboxContract<Counter>;
+    let deployer: SandboxContract<TreasuryContract>;
 
     beforeEach(async () => {
         blockchain = await Blockchain.create();
+        const id = BigInt(Math.floor(Date.now() / 1000));
+        counterContract = blockchain.openContract(await Counter.fromInit(id));
 
-        counter = blockchain.openContract(await Counter.fromInit());
+        deployer = await blockchain.treasury('deployer');
 
-        const deployer = await blockchain.treasury('deployer');
-
-        const deployResult = await counter.send(
+        const deployResult = await counterContract.send(
             deployer.getSender(),
             {
                 value: toNano('0.05'),
@@ -27,7 +28,7 @@ describe('Counter', () => {
 
         expect(deployResult.transactions).toHaveTransaction({
             from: deployer.address,
-            to: counter.address,
+            to: counterContract.address,
             deploy: true,
             success: true,
         });
@@ -35,6 +36,27 @@ describe('Counter', () => {
 
     it('should deploy', async () => {
         // the check is done inside beforeEach
-        // blockchain and counter are ready to use
+        // blockchain and counterContract are ready to use
+    });
+
+
+    it('should increment', async () => {
+        // the check is done inside beforeEach
+        // blockchain and counterContract are ready to use
+        const countBefore = await counterContract.getCounter()
+        console.log("counterBefore: ", countBefore)
+
+        await counterContract.send(
+            deployer.getSender(),
+            {
+                value: toNano('0.05'),
+            },
+            "increment"
+        );
+
+        const counterAfter = await counterContract.getCounter()
+        console.log("counterAfter: ", counterAfter)
+
+        expect(countBefore).toBeLessThan(counterAfter)
     });
 });
