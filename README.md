@@ -40,13 +40,13 @@ Docs: https://docs.nujan.io/
 
 10. Follow the following socials:
 
-**Telegram** <br>
-https://t.me/TONSocietyIndia <br>
-https://t.me/tondev_eng <br>
-https://t.me/Nujan_io
+    **Telegram** <br>
+    https://t.me/TONSocietyIndia <br>
+    https://t.me/tondev_eng <br>
+    https://t.me/Nujan_io
 
-**Twitter** <br>
-https://twitter.com/TON_SocietyIND
+    **Twitter** <br>
+    https://twitter.com/TON_SocietyIND
 
 11. Finally, share the link of your PR request on this Telegram channel https://t.me/TONSocietyIndia
 
