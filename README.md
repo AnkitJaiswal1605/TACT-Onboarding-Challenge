@@ -53,4 +53,3 @@ Docs: https://docs.nujan.io/
 ### Got any questions? ❓
 Feel free to ask here :
 https://discord.gg/fEr3yFJJ9r
->>>>>>> eb555134b740b2831548a59c31bc9fa6ee27af48
