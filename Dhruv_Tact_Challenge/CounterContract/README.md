@@ -1,6 +1,5 @@
+# CounterContract
 
-# Counter
-url : https://testnet.tonscan.org/address/EQARhZm-VQlnQSO5heN_iPsj8K3PXK8BDhH7sjDWut4PpQEF
 ## Project structure
 
 -   `contracts` - source code of all the smart contracts of the project and their dependencies.
@@ -22,4 +21,6 @@ url : https://testnet.tonscan.org/address/EQARhZm-VQlnQSO5heN_iPsj8K3PXK8BDhH7sj
 
 `npx blueprint run` or `yarn blueprint run`
 
+### Add a new contract
 
+`npx blueprint create ContractName` or `yarn blueprint create ContractName`
