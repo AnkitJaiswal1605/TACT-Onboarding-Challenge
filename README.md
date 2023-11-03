@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+Contract deployed at address EQBZqqnVjkvR1eiEuwVn5-v5Lm-o-FbPHvDtUAVKSgww0O_p
+You can view it at https://testnet.tonscan.org/address/EQBZqqnVjkvR1eiEuwVn5-v5Lm-o-FbPHvDtUAVKSgww0O_p
+=======
 # TACT Onboarding Challenge 🚀
 
 Welcome to the TACT Onboarding Challenge! This short challenge will empower you to create, test, deploy and interact with the smart contracts on the TON blockchain using the Tact programming language.
@@ -53,3 +57,4 @@ Docs: https://docs.nujan.io/
 ### Got any questions? ❓
 Feel free to ask here :
 https://discord.gg/fEr3yFJJ9r
+>>>>>>> eb555134b740b2831548a59c31bc9fa6ee27af48
