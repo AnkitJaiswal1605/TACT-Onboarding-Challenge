@@ -1,7 +1,3 @@
-
-URL : https://testnet.tonscan.org/address/EQARhZm-VQlnQSO5heN_iPsj8K3PXK8BDhH7sjDWut4PpQEF
-
-
 # Counter
 
 ## Project structure
