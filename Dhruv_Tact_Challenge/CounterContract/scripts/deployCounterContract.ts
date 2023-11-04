@@ -3,7 +3,7 @@ import { CounterContract } from '../wrappers/CounterContract';
 import { NetworkProvider } from '@ton-community/blueprint';
 
 export async function run(provider: NetworkProvider) {
-    const counterContract = provider.open(await CounterContract.fromInit(55678n));
+    const counterContract = provider.open(await CounterContract.fromInit(36427n));
 
     await counterContract.send(
         provider.sender(),
