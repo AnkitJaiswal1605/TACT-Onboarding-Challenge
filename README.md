@@ -1,4 +1,3 @@
-
 # Counter
 url : https://testnet.tonscan.org/address/EQARhZm-VQlnQSO5heN_iPsj8K3PXK8BDhH7sjDWut4PpQEF
 ## Project structure
@@ -22,4 +21,6 @@ url : https://testnet.tonscan.org/address/EQARhZm-VQlnQSO5heN_iPsj8K3PXK8BDhH7sj
 
 `npx blueprint run` or `yarn blueprint run`
 
+### Add a new contract
 
+`npx blueprint create ContractName` or `yarn blueprint create ContractName`
