@@ -1,0 +1,2 @@
+Contract deployed at address EQAzyL4E4dryPm1eToIc9Cf1kjLCThaXrFQlW6bQeKHF6U2p
+You can view it at: https://testnet.tonscan.org/address/EQAzyL4E4dryPm1eToIc9Cf1kjLCThaXrFQlW6bQeKHF6U2p
