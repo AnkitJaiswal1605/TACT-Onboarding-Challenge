@@ -48,8 +48,6 @@ Docs: https://docs.nujan.io/
     **Twitter** <br>
     https://twitter.com/TON_SocietyIND
 
-11. Finally, share the link of your PR request on this Telegram channel https://t.me/TONSocietyIndia
-
 ### Got any questions? ❓
 Feel free to ask here :
 https://discord.gg/fEr3yFJJ9r
