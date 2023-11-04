@@ -6,7 +6,7 @@ Welcome to the TACT Onboarding Challenge! This short challenge will empower you 
 **1 hour**
 
 ### Deadline ⏳
-3rd November (Friday), EOD
+4th November, 6 PM
 
 ### Rewards on successful completion of the challenge 🏆
 - First 50 successful PRs would get TON merch at hackCBS event
@@ -47,8 +47,6 @@ Docs: https://docs.nujan.io/
 
     **Twitter** <br>
     https://twitter.com/TON_SocietyIND
-
-11. Finally, share the link of your PR request on this Telegram channel https://t.me/TONSocietyIndia
 
 ### Got any questions? ❓
 Feel free to ask here :
