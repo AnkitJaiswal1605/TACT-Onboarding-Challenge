@@ -1,0 +1,6 @@
+// @flow
+
+declare module 'path-normalize' {
+  declare function normalize (s: string): string
+  declare module.exports typeof normalize
+}
