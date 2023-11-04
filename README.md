@@ -1,55 +1,26 @@
-# TACT Onboarding Challenge 🚀
+# Counter
+url : https://testnet.tonscan.org/address/EQARhZm-VQlnQSO5heN_iPsj8K3PXK8BDhH7sjDWut4PpQEF
+## Project structure
 
-Welcome to the TACT Onboarding Challenge! This short challenge will empower you to create, test, deploy and interact with the smart contracts on the TON blockchain using the Tact programming language.
+-   `contracts` - source code of all the smart contracts of the project and their dependencies.
+-   `wrappers` - wrapper classes (implementing `Contract` from ton-core) for the contracts, including any [de]serialization primitives and compilation functions.
+-   `tests` - tests for the contracts.
+-   `scripts` - scripts used by the project, mainly the deployment scripts.
 
-### Required time for completing the challenge 🕐
-**1 hour**
+## How to use
 
-### Deadline ⏳
-3rd November (Friday), EOD
+### Build
 
-### Rewards on successful completion of the challenge 🏆
-- First 50 successful PRs would get TON merch at hackCBS event
-- Everyone successfully raising a PR would get:
-    - Added to the talent group of TON on Telegram
-    - An NFT from the Nujan team
+`npx blueprint build` or `yarn blueprint build`
 
-# The Challenge 🛠
+### Test
 
-1. Refer to this tutorial series on Tact : <br>
-https://docs.google.com/document/d/1d_4sAVh0JUlVK8AxcGqtrmnPzmJs1Sg5sXB6dsUmx44/edit
+`npx blueprint test` or `yarn blueprint test`
 
-2. Create a Tonkeeper wallet referring the Lesson 1 in the tutorial series
+### Deploy or run another script
 
-3. Fork this repository to your own github account
+`npx blueprint run` or `yarn blueprint run`
 
-4. Create a folder with the following name convention: <br>
-_YourFullName_Tact_Challenge_ (If the name is already taken, use a number eg: _YourFullName1_Tact_Challenge_)
+### Add a new contract
 
-5. Go inside the folder and create a Counter smart contract referring the Lesson 2 in the tutorial series
-
-6. Write tests for the smart contract referring the Lesson 3 in the tutorial series
-
-7. Deploy the contract referring the Lesson 4 in the tutorial series. (**IMPORTANT**: Mention the address of your deployed contract in a readme file within your folder)
-
-8. Raise a Pull Request to merge with this repository (Make sure you create everything in the folder you created, so that there are no conflicts)
-
-9. Deploy the same smart contract on Nujan Web IDE as well: <br>
-https://ide-beta.nujan.io/ <br>
-Docs: https://docs.nujan.io/ 
-
-10. Follow the following socials:
-
-    **Telegram** <br>
-    https://t.me/TONSocietyIndia <br>
-    https://t.me/tondev_eng <br>
-    https://t.me/Nujan_io
-
-    **Twitter** <br>
-    https://twitter.com/TON_SocietyIND
-
-11. Finally, share the link of your PR request on this Telegram channel https://t.me/TONSocietyIndia
-
-### Got any questions? ❓
-Feel free to ask here :
-https://discord.gg/fEr3yFJJ9r
+`npx blueprint create ContractName` or `yarn blueprint create ContractName`
