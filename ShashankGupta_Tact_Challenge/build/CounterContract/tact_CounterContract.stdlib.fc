@@ -80,8 +80,8 @@ forall X0, X1 -> (X0, X1) __tact_tuple_destroy_2(tuple v) asm "2 UNTUPLE";
     send_raw_message($c, $params'mode);
 }
 
-((int, int), ()) $CounterContract$_fun_forward((int, int) $self, slice $to, cell $body, int $bounce, tuple $init) impure inline_ref {
-    var (($self'id, $self'val)) = $self;
+((int), ()) $CounterContract$_fun_forward((int) $self, slice $to, cell $body, int $bounce, tuple $init) impure inline_ref {
+    var (($self'count)) = $self;
     var ($init) = $init;
     cell $code = null();
     cell $data = null();
@@ -97,15 +97,15 @@ forall X0, X1 -> (X0, X1) __tact_tuple_destroy_2(tuple v) asm "2 UNTUPLE";
         if (($balanceBeforeMessage < 0)) {
             raw_reserve(0, 0);
             $global_send($SendParameters$_constructor_bounce_to_value_mode_body_code_data($bounce, $to, 0, (128 + 2), $body, $code, $data));
-            return (($self'id, $self'val), ());
+            return (($self'count), ());
         }
     }
     $global_send($SendParameters$_constructor_bounce_to_value_mode_body_code_data($bounce, $to, 0, (64 + 2), $body, $code, $data));
-    return (($self'id, $self'val), ());
+    return (($self'count), ());
 }
 
-((int, int), ()) $CounterContract$_fun_notify((int, int) $self, cell $body) impure inline {
-    var (($self'id, $self'val)) = $self;
-    ($self'id, $self'val)~$CounterContract$_fun_forward(__tact_context_get_sender(), $body, false, null());
-    return (($self'id, $self'val), ());
+((int), ()) $CounterContract$_fun_notify((int) $self, cell $body) impure inline {
+    var (($self'count)) = $self;
+    ($self'count)~$CounterContract$_fun_forward(__tact_context_get_sender(), $body, false, null());
+    return (($self'count), ());
 }

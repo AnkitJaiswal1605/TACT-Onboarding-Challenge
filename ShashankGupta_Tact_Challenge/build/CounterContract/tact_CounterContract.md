@@ -1,6 +1,6 @@
 # TACT Compilation Report
 Contract: CounterContract
-BOC Size: 698 bytes
+BOC Size: 666 bytes
 
 # Types
 Total Types: 6
@@ -30,11 +30,9 @@ TLB: `factory_deploy#6d0ff13b queryId:uint64 cashback:address = FactoryDeploy`
 Signature: `FactoryDeploy{queryId:uint64,cashback:address}`
 
 # Get Methods
-Total Get Methods: 2
+Total Get Methods: 1
 
 ## counter
-
-## id
 
 # Error Codes
 2: Stack undeflow

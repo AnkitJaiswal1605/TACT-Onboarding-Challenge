@@ -12,13 +12,11 @@ PROGRAM{
   DECLPROC $CounterContract$_store
   DECLPROC $CounterContract$_load
   DECLPROC $StateInit$_not_null
-  DECLPROC $CounterContract$init$_load
   DECLPROC $CounterContract$_contract_init
   DECLPROC $CounterContract$_contract_load
   DECLPROC $CounterContract$_contract_store
   DECLPROC $global_send
   DECLPROC $CounterContract$_fun_counter
-  DECLPROC $CounterContract$_fun_id
   DECLPROC $SendParameters$_constructor_bounce_to_value_mode_body_code_data
   DECLPROC $CounterContract$_fun_forward
   DECLPROC $CounterContract$_fun_notify
@@ -26,7 +24,6 @@ PROGRAM{
   DECLPROC $CounterContract$_internal_text_09e41946611c656ce05945ae7a47d045cf6349c8f40e4ed481cb2641b1a9a4b9
   DECLPROC $CounterContract$_internal_binary_Deploy
   104984 DECLMETHOD %counter
-  105872 DECLMETHOD %id
   113617 DECLMETHOD supported_interfaces
   121275 DECLMETHOD get_abi_ipfs
   115390 DECLMETHOD lazy_deployment_completed
@@ -98,25 +95,18 @@ PROGRAM{
     ENDC
   }>
   $CounterContract$_store PROCINLINE:<{
-    s0 s2 XCHG
-    32 STU
+    SWAP
     32 STU
   }>
   $CounterContract$_load PROCINLINE:<{
     32 LDU
-    32 LDU
-    -ROT
+    SWAP
   }>
   $StateInit$_not_null PROCINLINE:<{
     DUP
     ISNULL
     128 THROWIF
     2 UNTUPLE
-  }>
-  $CounterContract$init$_load PROCINLINE:<{
-    257 PUSHINT
-    LDIX
-    SWAP
   }>
   $CounterContract$_contract_init PROCREF:<{
     0 PUSHINT
@@ -131,16 +121,14 @@ PROGRAM{
     SWAP
     IFJMP:<{
       $CounterContract$_load INLINECALLDICT
-      1 2 BLKDROP2
+      NIP
     }>
+    DROP
     MYADDR
     11 PLDU
     10 PUSHPOW2
     EQUAL
     137 THROWIFNOT
-    $CounterContract$init$_load INLINECALLDICT
-    SWAP
-    ENDS
     $CounterContract$_contract_init INLINECALLDICT
   }>
   $CounterContract$_contract_store PROCINLINE:<{
@@ -151,7 +139,7 @@ PROGRAM{
     TRUE
     SWAP
     1 STI
-    -ROT
+    SWAP
     $CounterContract$_store INLINECALLDICT
     ENDC
     c4 POP
@@ -261,9 +249,6 @@ PROGRAM{
   $CounterContract$_fun_counter PROCREF:<{
     DUP
   }>
-  $CounterContract$_fun_id PROCREF:<{
-    OVER
-  }>
   $SendParameters$_constructor_bounce_to_value_mode_body_code_data PROCINLINE:<{
   }>
   $CounterContract$_fun_forward PROCREF:<{
@@ -308,12 +293,7 @@ PROGRAM{
   %counter PROC:<{
     $CounterContract$_contract_load INLINECALLDICT
     $CounterContract$_fun_counter INLINECALLDICT
-    2 1 BLKDROP2
-  }>
-  %id PROC:<{
-    $CounterContract$_contract_load INLINECALLDICT
-    $CounterContract$_fun_id INLINECALLDICT
-    2 1 BLKDROP2
+    NIP
   }>
   supported_interfaces PROC:<{
     123515602279859691144772641439386770278 PUSHINT
@@ -322,7 +302,7 @@ PROGRAM{
     209474421377847335869795010607481022628 PUSHINT
   }>
   get_abi_ipfs PROC:<{
-    x{697066733a2f2f516d5143767746624c46694835634646467a525a3863664c454762416679354e484b7459567139655856735a3973} PUSHSLICE
+    x{697066733a2f2f516d6357514d33757a677777556d513852387336437a787a466b41564e4276453231364c376e7754463951387858} PUSHSLICE
   }>
   lazy_deployment_completed PROC:<{
     c4 PUSH
@@ -391,7 +371,7 @@ PROGRAM{
     s0 s2 XCHG
     __tact_context_sender SETGLOB
     $CounterContract$_contract_load INLINECALLDICT
-    2SWAP
+    -ROT
     $CounterContract$_contract_router_internal INLINECALLDICT
     130 THROWIFNOT
     $CounterContract$_contract_store INLINECALLDICT

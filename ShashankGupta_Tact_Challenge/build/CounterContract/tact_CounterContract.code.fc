@@ -10,38 +10,32 @@
 ;; Contract CounterContract functions
 ;;
 
-(int, int) $CounterContract$_contract_init(int $id) impure inline_ref {
-    var (($self'id, $self'val)) = (null(), null());
-    $self'id = $id;
-    $self'val = 0;
-    return ($self'id, $self'val);
+(int) $CounterContract$_contract_init() impure inline_ref {
+    var (($self'count)) = (null());
+    $self'count = 0;
+    return ($self'count);
 }
 
-((int, int), int) $CounterContract$_fun_counter((int, int) $self) impure inline_ref {
-    var (($self'id, $self'val)) = $self;
-    return (($self'id, $self'val), $self'val);
-}
-
-((int, int), int) $CounterContract$_fun_id((int, int) $self) impure inline_ref {
-    var (($self'id, $self'val)) = $self;
-    return (($self'id, $self'val), $self'id);
+((int), int) $CounterContract$_fun_counter((int) $self) impure inline_ref {
+    var (($self'count)) = $self;
+    return (($self'count), $self'count);
 }
 
 ;;
 ;; Receivers of a Contract CounterContract
 ;;
 
-((int, int), ()) $CounterContract$_internal_text_09e41946611c656ce05945ae7a47d045cf6349c8f40e4ed481cb2641b1a9a4b9((int, int) $self) impure inline {
-    var ($self'id, $self'val) = $self;
-    $self'val = ($self'val + 1);
-    return (($self'id, $self'val), ());
+((int), ()) $CounterContract$_internal_text_09e41946611c656ce05945ae7a47d045cf6349c8f40e4ed481cb2641b1a9a4b9((int) $self) impure inline {
+    var ($self'count) = $self;
+    $self'count = ($self'count + 1);
+    return (($self'count), ());
 }
 
-(((int, int)), ()) $CounterContract$_internal_binary_Deploy((int, int) $self, (int) $deploy) impure inline {
-    var ($self'id, $self'val) = $self;
+(((int)), ()) $CounterContract$_internal_binary_Deploy((int) $self, (int) $deploy) impure inline {
+    var ($self'count) = $self;
     var ($deploy'queryId) = $deploy;
-    ($self'id, $self'val)~$CounterContract$_fun_notify($DeployOk$_store_cell($DeployOk$_constructor_queryId($deploy'queryId)));
-    return (($self'id, $self'val), ());
+    ($self'count)~$CounterContract$_fun_notify($DeployOk$_store_cell($DeployOk$_constructor_queryId($deploy'queryId)));
+    return (($self'count), ());
 }
 
 ;;
@@ -51,12 +45,6 @@
 _ %counter() method_id(104984) {
     var self = $CounterContract$_contract_load();
     var res = self~$CounterContract$_fun_counter();
-    return res;
-}
-
-_ %id() method_id(105872) {
-    var self = $CounterContract$_contract_load();
-    var res = self~$CounterContract$_fun_id();
     return res;
 }
 
@@ -70,7 +58,7 @@ _ supported_interfaces() method_id {
 }
 
 _ get_abi_ipfs() method_id {
-    return "ipfs://QmQCvwFbLFiH5cFFFzRZ8cfLEGbAfy5NHKtYVq9eXVsZ9s";
+    return "ipfs://QmcWQM3uzgwwUmQ8R8s6CzxzFkAVNBvE216L7nwTF9Q8xX";
 }
 
 _ lazy_deployment_completed() method_id {
@@ -81,7 +69,7 @@ _ lazy_deployment_completed() method_id {
 ;; Routing of a Contract CounterContract
 ;;
 
-((int, int), int) $CounterContract$_contract_router_internal((int, int) self, int msg_bounced, slice in_msg) impure inline_ref {
+((int), int) $CounterContract$_contract_router_internal((int) self, int msg_bounced, slice in_msg) impure inline_ref {
     ;; Handle bounced messages
     if (msg_bounced) {
         return (self, true);

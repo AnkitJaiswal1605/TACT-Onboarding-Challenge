@@ -323,23 +323,21 @@ function dictValueParserFactoryDeploy(): DictionaryValue<FactoryDeploy> {
 
  type CounterContract_init_args = {
     $$type: 'CounterContract_init_args';
-    id: bigint;
 }
 
 function initCounterContract_init_args(src: CounterContract_init_args) {
     return (builder: Builder) => {
         let b_0 = builder;
-        b_0.storeInt(src.id, 257);
     };
 }
 
-async function CounterContract_init(id: bigint) {
-    const __code = Cell.fromBase64('te6ccgECFAEAAq4AART/APSkE/S88sgLAQIBYgIDApzQAdDTAwFxsKMB+kABINdJgQELuvLgiCDXCwoggQT/uvLQiYMJuvLgiFRQUwNvBPhhAvhi2zxa2zzy4ILI+EMBzH8BygBZAssfyx/J7VQPBAIBWAgJAvbtou37AZIwf+BwIddJwh+VMCDXCx/eIIIQlGqYtrqOqDDTHwGCEJRqmLa68uCB0z8BMcgBghCv+Q9XWMsfyz/J+EIBcG3bPH/gwACOK/kBgvAJ5BlGYRxlbOBZRa56R9BFz2NJyPQOTtSByyZBsamkubqUpH/bMeCRMOIFEQE6bW0ibrOZWyBu8tCAbyIBkTLiECRwAwSAQlAj2zwGAcrIcQHKAVAHAcoAcAHKAlAFINdJgQELuvLgiCDXCwoggQT/uvLQiYMJuvLgiM8WUAP6AnABymgjbrORf5MkbrPilzMzAXABygDjDSFus5x/AcoAASBu8tCAAcyVMXABygDiyQH7AAcAmH8BygDIcAHKAHABygAkbrOdfwHKAAQgbvLQgFAEzJY0A3ABygDiJG6znX8BygAEIG7y0IBQBMyWNANwAcoA4nABygACfwHKAALJWMwCASAKCwIBSBITAgFuDA0Albd6ME4LnYerpZXPY9CdhzrJUKNs0E4TusalpWyPlmRadeW/vixHME4ECrgDcAzscpnLB1XI5LZYcE4TsunLVmnZbmdB0s2yjN0UkAIQqhjbPNs8bCEPDgIQqZDbPNs8bCEPEAACIAFQ7UTQ1AH4Y9IAAZfTH9MfWWwS4Pgo1wsKgwm68uCJgQEB1wABAdHbPBEAAiEAAnAAEbCvu1E0NIAAYAB1sm7jQ1aXBmczovL1FtUUN2d0ZiTEZpSDVjRkZGelJaOGNmTEVHYkFmeTVOSEt0WVZxOWVYVnNaOXOCA=');
-    const __system = Cell.fromBase64('te6cckECFgEAArgAAQHAAQEFoI+VAgEU/wD0pBP0vPLICwMCAWIPBAIBWAgFAgFIBwYAdbJu40NWlwZnM6Ly9RbVFDdndGYkxGaUg1Y0ZGRnpSWjhjZkxFR2JBZnk1TkhLdFlWcTllWFZzWjlzggABGwr7tRNDSAAGACASAKCQCVt3owTgudh6ullc9j0J2HOslQo2zQThO6xqWlbI+WZFp15b++LEcwTgQKuANwDOxymcsHVcjktlhwThOy6ctWadluZ0HSzbKM3RSQAgFuDQsCEKmQ2zzbPGwhFAwAAiECEKoY2zzbPGwhFA4AAiACnNAB0NMDAXGwowH6QAEg10mBAQu68uCIINcLCiCBBP+68tCJgwm68uCIVFBTA28E+GEC+GLbPFrbPPLggsj4QwHMfwHKAFkCyx/LH8ntVBQQAvbtou37AZIwf+BwIddJwh+VMCDXCx/eIIIQlGqYtrqOqDDTHwGCEJRqmLa68uCB0z8BMcgBghCv+Q9XWMsfyz/J+EIBcG3bPH/gwACOK/kBgvAJ5BlGYRxlbOBZRa56R9BFz2NJyPQOTtSByyZBsamkubqUpH/bMeCRMOIRFQE6bW0ibrOZWyBu8tCAbyIBkTLiECRwAwSAQlAj2zwSAcrIcQHKAVAHAcoAcAHKAlAFINdJgQELuvLgiCDXCwoggQT/uvLQiYMJuvLgiM8WUAP6AnABymgjbrORf5MkbrPilzMzAXABygDjDSFus5x/AcoAASBu8tCAAcyVMXABygDiyQH7ABMAmH8BygDIcAHKAHABygAkbrOdfwHKAAQgbvLQgFAEzJY0A3ABygDiJG6znX8BygAEIG7y0IBQBMyWNANwAcoA4nABygACfwHKAALJWMwBUO1E0NQB+GPSAAGX0x/TH1lsEuD4KNcLCoMJuvLgiYEBAdcAAQHR2zwVAAJwYNblVQ==');
+async function CounterContract_init() {
+    const __code = Cell.fromBase64('te6ccgECEQEAAo4AART/APSkE/S88sgLAQIBYgIDApjQAdDTAwFxsKMB+kABINdJgQELuvLgiCDXCwoggQT/uvLQiYMJuvLgiFRQUwNvBPhhAvhi2zxZ2zzy4ILI+EMBzH8BygABAcsfye1UDAQCAVgICQL27aLt+wGSMH/gcCHXScIflTAg1wsf3iCCEJRqmLa6jqgw0x8BghCUapi2uvLggdM/ATHIAYIQr/kPV1jLH8s/yfhCAXBt2zx/4MAAjiv5AYLwCeQZRmEcZWzgWUWuekfQRc9jScj0Dk7UgcsmQbGppLm6lKR/2zHgkTDiBQ4BOm1tIm6zmVsgbvLQgG8iAZEy4hAkcAMEgEJQI9s8BgHKyHEBygFQBwHKAHABygJQBSDXSYEBC7ry4Igg1wsKIIEE/7ry0ImDCbry4IjPFlAD+gJwAcpoI26zkX+TJG6z4pczMwFwAcoA4w0hbrOcfwHKAAEgbvLQgAHMlTFwAcoA4skB+wAHAJh/AcoAyHABygBwAcoAJG6znX8BygAEIG7y0IBQBMyWNANwAcoA4iRus51/AcoABCBu8tCAUATMljQDcAHKAOJwAcoAAn8BygACyVjMAgEgCgsCAUgPEAIPt0MbZ5tnhjAMDQCVt3owTgudh6ullc9j0J2HOslQo2zQThO6xqWlbI+WZFp15b++LEcwTgQKuANwDOxymcsHVcjktlhwThOy6ctWadluZ0HSzbKM3RSQATztRNDUAfhj0gABlNMfATHgMPgo1wsKgwm68uCJ2zwOAAIgAAJwABGwr7tRNDSAAGAAdbJu40NWlwZnM6Ly9RbWNXUU0zdXpnd3dVbVE4UjhzNkN6eHpGa0FWTkJ2RTIxNkw3bndURjlROHhYgg');
+    const __system = Cell.fromBase64('te6cckECEwEAApgAAQHAAQEFoI+VAgEU/wD0pBP0vPLICwMCAWIMBAIBWAgFAgFIBwYAdbJu40NWlwZnM6Ly9RbWNXUU0zdXpnd3dVbVE4UjhzNkN6eHpGa0FWTkJ2RTIxNkw3bndURjlROHhYggABGwr7tRNDSAAGACASAKCQCVt3owTgudh6ullc9j0J2HOslQo2zQThO6xqWlbI+WZFp15b++LEcwTgQKuANwDOxymcsHVcjktlhwThOy6ctWadluZ0HSzbKM3RSQAg+3Qxtnm2eGMBELAAIgApjQAdDTAwFxsKMB+kABINdJgQELuvLgiCDXCwoggQT/uvLQiYMJuvLgiFRQUwNvBPhhAvhi2zxZ2zzy4ILI+EMBzH8BygABAcsfye1UEQ0C9u2i7fsBkjB/4HAh10nCH5UwINcLH94gghCUapi2uo6oMNMfAYIQlGqYtrry4IHTPwExyAGCEK/5D1dYyx/LP8n4QgFwbds8f+DAAI4r+QGC8AnkGUZhHGVs4FlFrnpH0EXPY0nI9A5O1IHLJkGxqaS5upSkf9sx4JEw4g4SATptbSJus5lbIG7y0IBvIgGRMuIQJHADBIBCUCPbPA8ByshxAcoBUAcBygBwAcoCUAUg10mBAQu68uCIINcLCiCBBP+68tCJgwm68uCIzxZQA/oCcAHKaCNus5F/kyRus+KXMzMBcAHKAOMNIW6znH8BygABIG7y0IABzJUxcAHKAOLJAfsAEACYfwHKAMhwAcoAcAHKACRus51/AcoABCBu8tCAUATMljQDcAHKAOIkbrOdfwHKAAQgbvLQgFAEzJY0A3ABygDicAHKAAJ/AcoAAslYzAE87UTQ1AH4Y9IAAZTTHwEx4DD4KNcLCoMJuvLgids8EgACcCQXCaU=');
     let builder = beginCell();
     builder.storeRef(__system);
     builder.storeUint(0, 1);
-    initCounterContract_init_args({ $$type: 'CounterContract_init_args', id })(builder);
+    initCounterContract_init_args({ $$type: 'CounterContract_init_args' })(builder);
     const __data = builder.endCell();
     return { code: __code, data: __data };
 }
@@ -382,7 +380,6 @@ const CounterContract_types: ABIType[] = [
 
 const CounterContract_getters: ABIGetter[] = [
     {"name":"counter","arguments":[],"returnType":{"kind":"simple","type":"int","optional":false,"format":257}},
-    {"name":"id","arguments":[],"returnType":{"kind":"simple","type":"int","optional":false,"format":257}},
 ]
 
 const CounterContract_receivers: ABIReceiver[] = [
@@ -392,12 +389,12 @@ const CounterContract_receivers: ABIReceiver[] = [
 
 export class CounterContract implements Contract {
     
-    static async init(id: bigint) {
-        return await CounterContract_init(id);
+    static async init() {
+        return await CounterContract_init();
     }
     
-    static async fromInit(id: bigint) {
-        const init = await CounterContract_init(id);
+    static async fromInit() {
+        const init = await CounterContract_init();
         const address = contractAddress(0, init);
         return new CounterContract(address, init);
     }
@@ -438,13 +435,6 @@ export class CounterContract implements Contract {
     async getCounter(provider: ContractProvider) {
         let builder = new TupleBuilder();
         let source = (await provider.get('counter', builder.build())).stack;
-        let result = source.readBigNumber();
-        return result;
-    }
-    
-    async getId(provider: ContractProvider) {
-        let builder = new TupleBuilder();
-        let source = (await provider.get('id', builder.build())).stack;
         let result = source.readBigNumber();
         return result;
     }
