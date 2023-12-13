@@ -50,4 +50,4 @@ Docs: https://docs.nujan.io/
 
 ### Got any questions? ❓
 Feel free to ask here :
-https://discord.gg/fEr3yFJJ9r
+https://twitter.com/TON_SocietyIND
