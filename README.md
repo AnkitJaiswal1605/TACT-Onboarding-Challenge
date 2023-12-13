@@ -48,6 +48,9 @@ Docs: https://docs.nujan.io/
     **Twitter** <br>
     https://twitter.com/TON_SocietyIND
 
+11. Once done, fill this form to get added to our TON Talent Telegram Group and to receive a completion NFT:
+https://docs.google.com/forms/d/e/1FAIpQLSd4uS6PYigm_eRxsxQmAPNjbCvrSB2b03wApsDcaKfSiwSXTQ/viewform?pli=1
+
 ### Got any questions? ❓
 Feel free to ask here :
 https://twitter.com/TON_SocietyIND
